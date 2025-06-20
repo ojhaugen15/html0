@@ -1,8 +1,12 @@
 <html><head><script>
 function runProgram (programText) {
- programElement = document.createElement('script')
- programElement.text = programText
  bodyNode = document.body
+ programID = 'tested-program'
+ oldProgram = document.getElementById(programID)
+ bodyNode.removeChild(oldProgram)
+ programElement = document.createElement('script')
+ programElement.text = programTex
+ programElement.id = programID
  bodyNode.appendChild(programElement)
 }
 </script></head><body></body></html>
